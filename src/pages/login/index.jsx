@@ -13,6 +13,10 @@ import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, Criar
 const Login = () => {
 
     const navigate = useNavigate()
+    
+    const handleClickSignUp = () => {
+        navigate('/register')
+    }
 
     const { control, handleSubmit, formState: { errors  } } = useForm({
         reValidateMode: 'onChange',
@@ -56,7 +60,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText onClick={handleClickSignUp}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>

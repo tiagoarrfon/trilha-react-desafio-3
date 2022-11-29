@@ -13,7 +13,7 @@ export const Container = styled.main`
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 350px;
 `
 
 export const Column = styled.div`
@@ -67,11 +67,20 @@ export const EsqueciText  = styled.p`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-    cursor: pointer;
+
     color: #E5E044;
 ` 
 
-export const CriarText =  styled.p`
+export const JaPossuiConta =  styled.span`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #FFFF;
+`
+
+export const CriarText =  styled.span`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
